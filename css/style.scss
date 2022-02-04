@@ -141,7 +141,8 @@ body{
 @media screen and (min-width: 700px){
 
     body{
-        .container{            
+        .container{   
+            max-width: 1700px;         
             .modern-houses-container{
                 padding: 80px;
                 h1{
@@ -181,7 +182,28 @@ body{
     
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1024px) and (min-height: 800px) {
+    body{
+        .container{
+            .modern-houses-container{
+                width: 750px;
+                min-height: 50vh;
+            }
+            .button-price-modern-houses{
+                height: 150px;
+                .btn-price{
+                    width: 200px;
+                    height: 100%;
+                }
+                .price{
+                    height: 100%;
+                    width: 550px;
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: 1024px){
     body{
         .container{
             max-height: 800px;
@@ -231,7 +253,6 @@ body{
 @media screen and (min-width: 1700px) {
     body{
         .container{
-            max-height: 800px;
             border: 15px solid black;
             border-radius: 50px;
         }

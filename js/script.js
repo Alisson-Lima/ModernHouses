@@ -1,10 +1,12 @@
 (function(){
 
     slideHouses();
-
+    window.addEventListener('resize', resizeWindow);
+    function resizeWindow(){
+        window.location.reload()
+    }
     function slideHouses(){
         let screenWidth = verifyScreen()
-
         slideOn();
         function slideOn(){
 
