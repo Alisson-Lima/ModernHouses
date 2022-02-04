@@ -1,0 +1,269 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  font-family: sans-serif;
+  color: white;
+}
+
+@font-face {
+  font-family: Gilroy;
+  src: url(../font/Gilroy-Light.otf);
+}
+
+@font-face {
+  font-family: MontSemiBold;
+  src: url(../font/Montserrat-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: MontBold;
+  src: url(../font/Montserrat-Bold.otf);
+}
+
+@font-face {
+  font-family: MontExtraLight;
+  src: url(../font/Montserrat-ExtraLight.ttf);
+}
+
+h1 {
+  font-family: Gilroy;
+  font-size: 3.125rem;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+
+h4 {
+  font-family: MontSemiBold;
+  font-size: 0.875rem;
+  letter-spacing: 7px;
+  text-transform: uppercase;
+}
+
+p {
+  font-family: MontExtraLight;
+}
+
+.btn-price {
+  background-color: #B05513;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  width: 100px;
+  height: 100px;
+}
+
+img {
+  width: 100%;
+}
+
+body {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .container {
+  display: block;
+  position: relative;
+  overflow-x: hidden;
+  width: 100%;
+  height: 100%;
+  max-width: 1500px;
+  background-image: url(../img/bgImovel.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: none;
+}
+
+body .container .modern-houses-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  padding: 25px;
+  background: rgba(28, 28, 28, 0.9);
+  width: 90vw;
+  min-height: 450px;
+}
+
+body .container .modern-houses-container h1 {
+  margin-bottom: 50px;
+}
+
+body .container .modern-houses-container h4 {
+  margin-bottom: 20px;
+}
+
+body .container .modern-houses-container p {
+  font-size: .8rem;
+  line-height: 18px;
+}
+
+body .container .button-price-modern-houses {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+body .container .button-price-modern-houses .price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: calc(90vw - 100px);
+  background-color: rgba(236, 236, 236, 0.4);
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+  padding-left: 25px;
+}
+
+body .container .button-price-modern-houses .price h2 {
+  font-size: 1.43rem;
+  letter-spacing: 1px;
+}
+
+body .container .modern-houses-slide .houses-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin-top: 50px;
+  padding-left: 20px;
+}
+
+body .container .modern-houses-slide .houses-container .houses {
+  min-width: 250px;
+  margin-right: 20px;
+  max-height: 400px;
+}
+
+body .container .modern-houses-slide .houses-container .houses img {
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (min-width: 700px) {
+  body .container .modern-houses-container {
+    padding: 80px;
+  }
+  body .container .modern-houses-container h1 {
+    margin-top: 30px;
+    font-size: 5rem;
+  }
+  body .container .modern-houses-container h4 {
+    font-size: 1.3rem;
+  }
+  body .container .modern-houses-container p {
+    font-size: 1rem;
+    line-height: 25px;
+  }
+  body .container .button-price-modern-houses .btn-price {
+    height: 150px;
+    width: 150px;
+  }
+  body .container .button-price-modern-houses .price {
+    width: calc(90vw - 150px);
+    padding-left: 50px;
+  }
+  body .container .button-price-modern-houses .price h2 {
+    font-size: 3rem;
+  }
+  body .container .modern-houses-slide .houses-container .houses {
+    min-width: 445px;
+    min-height: 400px;
+    max-height: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  body .container {
+    max-height: 800px;
+    overflow: hidden;
+    background-position-y: -900px;
+  }
+  body .container .modern-houses-container {
+    max-width: 580px;
+    min-height: 80vh;
+  }
+  body .container .button-price-modern-houses {
+    position: absolute;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    bottom: 0;
+    height: 20%;
+  }
+  body .container .button-price-modern-houses .btn-price {
+    width: 200px;
+    height: 100%;
+  }
+  body .container .button-price-modern-houses .price {
+    height: 100%;
+    width: 380px;
+  }
+  body .container .modern-houses-slide {
+    position: absolute;
+    width: calc(100vw - 580px);
+    margin-left: 580px;
+    top: 0;
+  }
+  body .container .modern-houses-slide .houses-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body .container .modern-houses-slide .houses-container .houses {
+    max-width: 300px;
+    min-width: 300px;
+    min-height: 450px;
+    max-height: 450px;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 1700px) {
+  body .container {
+    max-height: 800px;
+    border: 15px solid black;
+    border-radius: 50px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
